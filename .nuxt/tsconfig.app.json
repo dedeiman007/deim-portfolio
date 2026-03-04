@@ -34,9 +34,6 @@
       "vite/client": [
         "../node_modules/vite/client"
       ],
-      "@nuxtjs/mdc": [
-        "../node_modules/@nuxtjs/mdc"
-      ],
       "nitropack/types": [
         "../node_modules/nitropack/types"
       ],
@@ -60,12 +57,6 @@
       ],
       "crossws": [
         "../node_modules/crossws"
-      ],
-      "#content/components": [
-        "./content/components"
-      ],
-      "#content/manifest": [
-        "./content/manifest"
       ],
       "~": [
         "../app"
@@ -121,24 +112,6 @@
       "#color-mode-options": [
         "./color-mode-options.mjs"
       ],
-      "#og-image": [
-        "../node_modules/nuxt-og-image/dist/runtime"
-      ],
-      "#og-image/*": [
-        "../node_modules/nuxt-og-image/dist/runtime/*"
-      ],
-      "#og-image-cache": [
-        "../node_modules/nuxt-og-image/dist/runtime/server/og-image/cache/lru"
-      ],
-      "#nuxt-og-image-utils": [
-        "../node_modules/nuxt-og-image/dist/runtime/shared"
-      ],
-      "#site-config": [
-        "../node_modules/nuxt-site-config/dist/runtime"
-      ],
-      "#site-config/*": [
-        "../node_modules/nuxt-site-config/dist/runtime/*"
-      ],
       "#vue-router": [
         "../node_modules/vue-router"
       ],
@@ -148,17 +121,8 @@
       "#imports": [
         "./imports"
       ],
-      "#mdc-configs": [
-        "./mdc-configs"
-      ],
-      "#mdc-highlighter": [
-        "./mdc-highlighter"
-      ],
-      "#mdc-imports": [
-        "./mdc-imports"
-      ],
       "#app-manifest": [
-        "./manifest/meta/dev.json"
+        "./manifest/meta/dev"
       ],
       "#components": [
         "./components"
@@ -217,19 +181,12 @@
     "../node_modules",
     "../node_modules/nuxt/node_modules",
     "../node_modules/@nuxt/eslint/node_modules",
-    "../node_modules/@nuxt/image/node_modules",
     "../node_modules/@nuxt/icon/node_modules",
     "../node_modules/@nuxt/fonts/node_modules",
     "../node_modules/@nuxtjs/color-mode/node_modules",
     "../node_modules/@nuxt/ui/node_modules",
-    "../node_modules/@nuxt/content/node_modules",
-    "../node_modules/@vueuse/nuxt/node_modules",
-    "../node_modules/nuxt-site-config/node_modules",
-    "../node_modules/nuxt-og-image/node_modules",
-    "../node_modules/motion-v/node_modules",
     "../node_modules/@nuxt/devtools/node_modules",
     "../node_modules/@nuxt/telemetry/node_modules",
-    "../node_modules/@nuxtjs/mdc/node_modules",
     "../dist",
     "../.data",
     "../modules/*/runtime/server/**/*",
@@ -245,10 +202,6 @@
     "../node_modules/dist/runtime/server",
     "../node_modules/*.*",
     "../node_modules/dist/*.*",
-    "../node_modules/nuxt-site-config/dist/runtime/server",
-    "../node_modules/nuxt-site-config/dist/dist/runtime/server",
-    "../node_modules/nuxt-site-config/dist/*.*",
-    "../node_modules/nuxt-site-config/dist/dist/*.*",
     "dev",
     "../server"
   ]

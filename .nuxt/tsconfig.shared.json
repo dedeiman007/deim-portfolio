@@ -34,9 +34,6 @@
       "vite/client": [
         "../node_modules/vite/client"
       ],
-      "@nuxtjs/mdc": [
-        "../node_modules/@nuxtjs/mdc"
-      ],
       "nitropack/types": [
         "../node_modules/nitropack/types"
       ],
@@ -60,12 +57,6 @@
       ],
       "crossws": [
         "../node_modules/crossws"
-      ],
-      "#content/components": [
-        "./content/components"
-      ],
-      "#content/manifest": [
-        "./content/manifest"
       ],
       "~": [
         "../app"
@@ -121,24 +112,6 @@
       "#color-mode-options": [
         "./color-mode-options.mjs"
       ],
-      "#og-image": [
-        "../node_modules/nuxt-og-image/dist/runtime"
-      ],
-      "#og-image/*": [
-        "../node_modules/nuxt-og-image/dist/runtime/*"
-      ],
-      "#og-image-cache": [
-        "../node_modules/nuxt-og-image/dist/runtime/server/og-image/cache/lru"
-      ],
-      "#nuxt-og-image-utils": [
-        "../node_modules/nuxt-og-image/dist/runtime/shared"
-      ],
-      "#site-config": [
-        "../node_modules/nuxt-site-config/dist/runtime"
-      ],
-      "#site-config/*": [
-        "../node_modules/nuxt-site-config/dist/runtime/*"
-      ],
       "#vue-router": [
         "../node_modules/vue-router"
       ],
@@ -148,17 +121,8 @@
       "#imports": [
         "./imports"
       ],
-      "#mdc-configs": [
-        "./mdc-configs"
-      ],
-      "#mdc-highlighter": [
-        "./mdc-highlighter"
-      ],
-      "#mdc-imports": [
-        "./mdc-imports"
-      ],
       "#app-manifest": [
-        "./manifest/meta/dev.json"
+        "./manifest/meta/dev"
       ],
       "#build": [
         "."

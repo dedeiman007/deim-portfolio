@@ -21,7 +21,6 @@ declare global {
   const createEvent: typeof import('../../node_modules/h3').createEvent
   const createEventStream: typeof import('../../node_modules/h3').createEventStream
   const createRouter: typeof import('../../node_modules/h3').createRouter
-  const createSitePathResolver: typeof import('../../node_modules/nuxt-site-config/dist/runtime/server/composables/utils').createSitePathResolver
   const defaultContentType: typeof import('../../node_modules/h3').defaultContentType
   const defineAppConfig: typeof import('../../node_modules/@nuxt/nitro-server/dist/runtime/utils/config').defineAppConfig
   const defineCachedEventHandler: typeof import('../../node_modules/nitropack/dist/runtime/internal/cache').defineCachedEventHandler
@@ -50,7 +49,6 @@ declare global {
   const getHeader: typeof import('../../node_modules/h3').getHeader
   const getHeaders: typeof import('../../node_modules/h3').getHeaders
   const getMethod: typeof import('../../node_modules/h3').getMethod
-  const getNitroOrigin: typeof import('../../node_modules/nuxt-site-config/dist/runtime/server/composables/getNitroOrigin').getNitroOrigin
   const getProxyRequestHeaders: typeof import('../../node_modules/h3').getProxyRequestHeaders
   const getQuery: typeof import('../../node_modules/h3').getQuery
   const getRequestFingerprint: typeof import('../../node_modules/h3').getRequestFingerprint
@@ -70,8 +68,6 @@ declare global {
   const getRouterParam: typeof import('../../node_modules/h3').getRouterParam
   const getRouterParams: typeof import('../../node_modules/h3').getRouterParams
   const getSession: typeof import('../../node_modules/h3').getSession
-  const getSiteConfig: typeof import('../../node_modules/nuxt-site-config/dist/runtime/server/composables/getSiteConfig').getSiteConfig
-  const getSiteIndexable: typeof import('../../node_modules/nuxt-site-config/dist/runtime/server/composables/getSiteIndexable').getSiteIndexable
   const getValidatedQuery: typeof import('../../node_modules/h3').getValidatedQuery
   const getValidatedRouterParams: typeof import('../../node_modules/h3').getValidatedRouterParams
   const handleCacheHeaders: typeof import('../../node_modules/h3').handleCacheHeaders
@@ -87,13 +83,8 @@ declare global {
   const lazyEventHandler: typeof import('../../node_modules/h3').lazyEventHandler
   const nitroPlugin: typeof import('../../node_modules/nitropack/dist/runtime/internal/plugin').nitroPlugin
   const parseCookies: typeof import('../../node_modules/h3').parseCookies
-  const parseMarkdown: typeof import('../../node_modules/@nuxtjs/mdc/dist/runtime/parser').parseMarkdown
   const promisifyNodeListener: typeof import('../../node_modules/h3').promisifyNodeListener
   const proxyRequest: typeof import('../../node_modules/h3').proxyRequest
-  const queryCollection: typeof import('../../node_modules/@nuxt/content/dist/runtime/nitro').queryCollection
-  const queryCollectionItemSurroundings: typeof import('../../node_modules/@nuxt/content/dist/runtime/nitro').queryCollectionItemSurroundings
-  const queryCollectionNavigation: typeof import('../../node_modules/@nuxt/content/dist/runtime/nitro').queryCollectionNavigation
-  const queryCollectionSearchSections: typeof import('../../node_modules/@nuxt/content/dist/runtime/nitro').queryCollectionSearchSections
   const readBody: typeof import('../../node_modules/h3').readBody
   const readFormData: typeof import('../../node_modules/h3').readFormData
   const readMultipartFormData: typeof import('../../node_modules/h3').readMultipartFormData
@@ -120,7 +111,6 @@ declare global {
   const setResponseHeaders: typeof import('../../node_modules/h3').setResponseHeaders
   const setResponseStatus: typeof import('../../node_modules/h3').setResponseStatus
   const splitCookiesString: typeof import('../../node_modules/h3').splitCookiesString
-  const stringifyMarkdown: typeof import('../../node_modules/@nuxtjs/mdc/dist/runtime/stringify').stringifyMarkdown
   const toEventHandler: typeof import('../../node_modules/h3').toEventHandler
   const toNodeListener: typeof import('../../node_modules/h3').toNodeListener
   const toPlainHandler: typeof import('../../node_modules/h3').toPlainHandler
@@ -128,19 +118,13 @@ declare global {
   const toWebRequest: typeof import('../../node_modules/h3').toWebRequest
   const unsealSession: typeof import('../../node_modules/h3').unsealSession
   const updateSession: typeof import('../../node_modules/h3').updateSession
-  const updateSiteConfig: typeof import('../../node_modules/nuxt-site-config/dist/runtime/server/composables/updateSiteConfig').updateSiteConfig
   const useAppConfig: typeof import('../../node_modules/nitropack/dist/runtime/internal/config').useAppConfig
   const useBase: typeof import('../../node_modules/h3').useBase
   const useEvent: typeof import('../../node_modules/nitropack/dist/runtime/internal/context').useEvent
-  const useImage: typeof import('../../node_modules/@nuxt/image/dist/runtime/server/utils/image').useImage
   const useNitroApp: typeof import('../../node_modules/nitropack/dist/runtime/internal/app').useNitroApp
-  const useNitroOrigin: typeof import('../../node_modules/nuxt-site-config/dist/runtime/server/composables/useNitroOrigin').useNitroOrigin
   const useRuntimeConfig: typeof import('../../node_modules/nitropack/dist/runtime/internal/config').useRuntimeConfig
   const useSession: typeof import('../../node_modules/h3').useSession
-  const useSiteConfig: typeof import('../../node_modules/nuxt-site-config/dist/runtime/server/composables/useSiteConfig').useSiteConfig
   const useStorage: typeof import('../../node_modules/nitropack/dist/runtime/internal/storage').useStorage
-  const withSiteTrailingSlash: typeof import('../../node_modules/nuxt-site-config/dist/runtime/server/composables/utils').withSiteTrailingSlash
-  const withSiteUrl: typeof import('../../node_modules/nuxt-site-config/dist/runtime/server/composables/utils').withSiteUrl
   const writeEarlyHints: typeof import('../../node_modules/h3').writeEarlyHints
 }
 // for type re-export
@@ -163,14 +147,3 @@ export { defineTask, runTask } from 'nitropack/runtime/internal/task';
 export { defineNitroErrorHandler } from 'nitropack/runtime/internal/error/utils';
 export { buildAssetsURL as __buildAssetsURL, publicAssetsURL as __publicAssetsURL } from '/Users/deim/Documents/project-viet/deim-portfolio/node_modules/@nuxt/nitro-server/dist/runtime/utils/paths';
 export { defineAppConfig } from '/Users/deim/Documents/project-viet/deim-portfolio/node_modules/@nuxt/nitro-server/dist/runtime/utils/config';
-export { useImage } from '/Users/deim/Documents/project-viet/deim-portfolio/node_modules/@nuxt/image/dist/runtime/server/utils/image';
-export { queryCollection, queryCollectionSearchSections, queryCollectionNavigation, queryCollectionItemSurroundings } from '/Users/deim/Documents/project-viet/deim-portfolio/node_modules/@nuxt/content/dist/runtime/nitro';
-export { parseMarkdown } from '/Users/deim/Documents/project-viet/deim-portfolio/node_modules/@nuxtjs/mdc/dist/runtime/parser';
-export { stringifyMarkdown } from '/Users/deim/Documents/project-viet/deim-portfolio/node_modules/@nuxtjs/mdc/dist/runtime/stringify';
-export { getNitroOrigin } from '/Users/deim/Documents/project-viet/deim-portfolio/node_modules/nuxt-site-config/dist/runtime/server/composables/getNitroOrigin';
-export { getSiteConfig } from '/Users/deim/Documents/project-viet/deim-portfolio/node_modules/nuxt-site-config/dist/runtime/server/composables/getSiteConfig';
-export { getSiteIndexable } from '/Users/deim/Documents/project-viet/deim-portfolio/node_modules/nuxt-site-config/dist/runtime/server/composables/getSiteIndexable';
-export { updateSiteConfig } from '/Users/deim/Documents/project-viet/deim-portfolio/node_modules/nuxt-site-config/dist/runtime/server/composables/updateSiteConfig';
-export { useNitroOrigin } from '/Users/deim/Documents/project-viet/deim-portfolio/node_modules/nuxt-site-config/dist/runtime/server/composables/useNitroOrigin';
-export { useSiteConfig } from '/Users/deim/Documents/project-viet/deim-portfolio/node_modules/nuxt-site-config/dist/runtime/server/composables/useSiteConfig';
-export { createSitePathResolver, withSiteTrailingSlash, withSiteUrl } from '/Users/deim/Documents/project-viet/deim-portfolio/node_modules/nuxt-site-config/dist/runtime/server/composables/utils';

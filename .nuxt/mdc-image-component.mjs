@@ -1,1 +1,0 @@
-export { default } from "/Users/deim/Documents/project-viet/deim-portfolio/node_modules/@nuxt/image/dist/runtime/components/NuxtImg.vue"
