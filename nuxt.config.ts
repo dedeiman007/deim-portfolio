@@ -12,7 +12,10 @@ export default defineNuxtConfig({
   css: ['~/assets/css/main.css'],
 
   nitro: {
-    preset: 'cloudflare-module'
+    preset: 'cloudflare-module',
+    externals: {
+      exclude: ['better-sqlite3']
+    }
   },
 
   routeRules: {
