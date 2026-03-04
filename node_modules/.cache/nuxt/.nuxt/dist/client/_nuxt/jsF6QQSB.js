@@ -1,0 +1,1 @@
+import{b as s,w as n,r as o,aQ as a,o as r}from"./DgWy2ypk.js";import{_ as c}from"./DlAUqK2U.js";const f={};function _(e,l){const t=a;return r(),s(t,{class:"flex flex-col items-center justify-center gap-6 min-h-svh"},{default:n(()=>[o(e.$slots,"default")]),_:3})}const p=c(f,[["render",_]]);export{p as default};
